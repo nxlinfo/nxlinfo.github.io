@@ -1,0 +1,33 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+#header{
+	width: 100vw;
+	height:20vw;
+	background-color: black;
+	
+}
+#bodyss{
+	position:absolute;
+}
+ul{
+	position: absolute;
+}
+li{
+	position: relative;
+	top:2vw;
+	margin: 1vw 0px;
+	width: 100vw;
+	height: 20vw;
+	list-style-type: none;
+}
+.menu{
+	position: absolute;
+	background-color: red;
+	width: 100vw;
+	height: 20vw;
+	margin: 1vw 0px;
+	text-align: center;
+	font-size: 20px;
+}
