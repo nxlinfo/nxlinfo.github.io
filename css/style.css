@@ -1,0 +1,131 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+body{
+	background-color: black;
+}
+#header{
+	position: relative;
+	width: 100vw;
+	height:30vw;
+	background-color: #0D0E0E;
+	
+}
+#header #face{
+	position: absolute;
+	top:8%;
+	left: 2%;
+	width: 25%;
+	background-image:url('https://nxlinfo.github.io/assests/face.jpg');
+	background-size: 100%;
+	background-repeat: no-repeat;
+	height: 80%;
+	border-radius: 100%;
+}
+/*#face img{
+	position: absolute;
+	background-size: 100%;
+}*/
+#header #name{
+	color:white;
+	position: absolute;
+	top:12%;
+	right:8%;
+	font-size: 7vw;
+	font-family: arial;
+}
+#header #age{
+	color:white;
+	position: absolute;
+	top:56%;
+	font-size: 5vw;
+	font-family: arial;
+	right:8%;
+}
+#header #sex{
+	color:white;
+	position: absolute;
+	top:56%;
+	font-size: 5vw;
+	font-family: arial;
+	left:33%;
+
+}
+#header #job{
+	color:white;
+	position: absolute;
+	top:56%;
+	font-size: 5vw;
+	font-family: arial;
+	left:54%;
+
+}
+#bodyss{
+	position:absolute;
+}
+ul{
+	position: absolute;
+}
+li{
+	position: relative;
+	top:2vw;
+	margin: 1vw 0px;
+	width: 100vw;
+	height: 20vw;
+	list-style-type: none;
+}
+li p{
+	font-size: 7vw;
+	margin: 5vw;
+	color:#fff;
+	position: absolute;
+	left:18%;
+}
+.menu{
+	position: absolute;
+	background-color: #0D0E0E;
+	width: 100vw;
+	height: 20vw;
+	margin: 1vw 0px;	
+	
+}
+.fa-facebook{
+	color:rgba(132,243,248,0.6);
+	position: absolute;
+	top:10%;
+	left: 4%;
+	font-size: 16vw;
+}
+.fa-phone{
+	z-index: 2;
+	color:rgba(132,243,248,0.6);
+	position: absolute;
+	top:10%;
+	left: 4%;
+	font-size: 16vw;
+}
+.fa-instagram{
+	z-index: 2;
+	color:rgba(132,243,248,0.6);
+	position: absolute;
+	top:10%;
+	left: 4%;
+	font-size: 16vw;
+}
+.fa-university{
+	z-index: 2;
+	color:rgba(132,243,248,0.6);
+	position: absolute;
+	top:10%;
+	left: 4%;
+	font-size: 16vw;
+}
+.fa-envelope{
+	z-index: 2;
+	color:rgba(132,243,248,0.6);
+	position: absolute;
+	top:10%;
+	left: 4%;
+	font-size: 16vw;
+}
