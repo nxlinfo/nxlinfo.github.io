@@ -82,6 +82,23 @@ li p{
 	position: absolute;
 	left:18%;
 }
+li p1{
+	font-size: 3.5vw;
+	margin: 5vw;
+	color:#fff;
+	position: absolute;
+	left:18%;
+	top:45%;
+}
+li p2{
+	font-size: 2vw;
+	margin: 5vw;
+	color:#fff;
+	position: absolute;
+	right:3%;
+	top:45%;
+	display: none;
+}
 .menu{
 	position: absolute;
 	background-color: #0D0E0E;
@@ -128,4 +145,15 @@ li p{
 	top:10%;
 	left: 4%;
 	font-size: 16vw;
+}
+.fa-copy{
+	cursor: pointer;
+	position: absolute;
+	top:32%;
+	right: 10%;
+	font-size: 6vw;
+	color :#fff;
+}
+.fa-copy:hover{
+	color:#ffb;
 }
