@@ -23,7 +23,7 @@
 			<a href="https://www.facebook.com/nxlzero">
 				<div class="menu">
           <i class="fab fa-facebook"></i>
-					<p>FACEBOOK</p>
+					<p>Facebook</p>
 				</div>
 			</a>
 		</li>
@@ -32,19 +32,11 @@
 			<a href="https://www.instagram.com/nxlzero">
 				<div class="menu">
           <i class="fab fa-instagram"></i>
-					<p>INSTAGRAM</p>
+					<p>Instagram</p>
 				</div>
 			</a>
 		</li>
-		 <li>
-        <i class="fas fa-university"></i>
-        <div class="menu">
-          <p id="idbank">101870478855</p>
-          <i class="far fa-copy" onclick="myFunction()"></i>
-          <p2 id="copy1">Đã sao chép</p2>
-          <p1>Viettinbank</p1>
-        </div>
-    </li>
+		 
      <li>
         <i class="fas fa-phone"></i>
         <div class="menu">
@@ -57,27 +49,37 @@
      <li>
         <i class="far fa-envelope"></i>
         <div class="menu">
-          <p>xuanlamzero@gmail.com</p>
+          <p id="idmail">xuanlamzero@gmail.com</p>
+          <i class="far fa-copy"
+          onclick="myFunction2()"></i>
+          <p2 id="copy3">Đã sao chép</p2>
         </div>
     </li>
-    
+    <li>
+      <a href="https://nxlinfo.github.io/indexx.html">
+        <div class="menu">
+          <i class="fas fa-university"></i>
+          <p>Chuyển Tiền</p>
+        </div>
+      </a>
+    </li>
 		</ul>
 	</div>
 	
 </body>
 <script>
-  function myFunction() {
-    var copyText = document.getElementById("idbank");
+  function myFunction2() {
+    var coyText = document.getElementById("idmail");
     var input=document.createElement("INPUT");
     document.body.appendChild(input);
-    input.value=copyText.innerHTML;
+    input.value=coyText.innerHTML;
     input.select();
     input.setSelectionRange(0, 99999);
     document.execCommand("copy");
     document.body.removeChild(input);
-    document.getElementById("copy1").style.display = 'block';
+    document.getElementById("copy3").style.display = 'block';
     setTimeout(function(){
-             document.getElementById("copy1").style.display = 'none';;
+             document.getElementById("copy3").style.display = 'none';;
         },500);
   }
   function myFunction1() {
