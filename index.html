@@ -68,6 +68,7 @@
 	
 </body>
 <script>
+  var sound = new Audio("sound.mp3");
   function myFunction2() {
     var coyText = document.getElementById("idmail");
     var input=document.createElement("INPUT");
@@ -77,6 +78,7 @@
     input.setSelectionRange(0, 99999);
     document.execCommand("copy");
     document.body.removeChild(input);
+    sound.play();
     document.getElementById("copy3").style.display = 'block';
     setTimeout(function(){
              document.getElementById("copy3").style.display = 'none';;
@@ -91,7 +93,7 @@
     input.setSelectionRange(0, 99999);
     document.execCommand("copy");
     document.body.removeChild(input);
-
+    sound.play();
      document.getElementById("copy2").style.display = 'block';
      setTimeout(function(){
              document.getElementById("copy2").style.display = 'none';;

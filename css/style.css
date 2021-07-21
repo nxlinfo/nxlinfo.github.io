@@ -2,6 +2,9 @@
 	padding: 0px;
 	margin: 0px;
 }
+html{
+	font-family: arial;
+}
 body{
 	background-color: black;
 	position: absolute;
@@ -50,7 +53,7 @@ body{
 	top:56%;
 	font-size: 5vw;
 	font-family: arial;
-	left:33%;
+	left:34%;
 
 }
 #header #job{
@@ -77,8 +80,8 @@ li{
 	list-style-type: none;
 }
 li p{
-	font-size: 7vw;
-	margin: 5vw;
+	font-size: 6.5vw;
+	margin: 6vw;
 	color:#fff;
 	position: absolute;
 	left:18%;
@@ -202,7 +205,7 @@ li p2{
 	border-radius: 6vw;
 }
 #home2 p{
-	color: #ffb;
+	color:rgba(132,243,248,0.6);
 	text-align: center;
 	font-size: 8vw;
 	margin: 2vw 0px;
@@ -211,3 +214,54 @@ li p2{
 #test:hover #home2{
 	background-color: #2c2f2d;
 }
+#gift{
+	position: absolute;
+	bottom:-25vw;
+	right: 5vw;
+	height: 15vw;
+	width: 35vw;
+	background-color: #0D0E0E; 
+	border-radius: 6vw;
+	cursor: pointer;
+}
+#gift p{
+	color:rgba(132,243,248,0.6);
+	text-align: center;
+	font-size: 8vw;
+	margin: 2vw 0px;
+	font-family: arial;
+}
+#sdt{
+	width:100vw;
+	height:20vw;
+	background-color: red;
+	display: none;
+}
+#nhapsdt{
+		width: 80%;
+		height:50%;
+}
+#thayHuan{
+	position:	relative;
+	width:100vw;
+	height:100vw;
+	background-image: url('https://memedaily.vn/storage/meme/toan-bo-loi-ran-day-cua-huan-hoa-hong-huan-rose.jpg');
+	background-size: 100%;
+	display: none;
+	animation-name:move;
+    animation-duration:8s;
+   /* animation-iteration-count:infinite;*/
+	/*display: none;*/
+	/*z-index: 4;*/
+}
+ @keyframes move{
+            0%{
+                opacity: 0%;
+            }
+            10%{
+            	opacity: 0%;
+            }
+            100%{
+              opacity: 100%;
+            }
+        }

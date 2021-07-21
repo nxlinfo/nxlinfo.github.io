@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Gift</title>
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+</head>
+<body>
+
+	<div id="bodysa">
+	<ul>
+		<li>
+			<a href="https://nhantien.momo.vn/eS6syyRPGrC">
+				<div class="menu">
+					<p>Tài liệu học tập</p>
+				</div>
+			</a>
+		</li>
+		<li onclick="thayHuan()">
+			
+				<div class="menu" >
+					<p>Thẻ điện thoại</p>
+				</div>
+		</li>
+	<ul>
+	</div>
+	<div id="thayHuan">
+	</div>
+	<!-- <div id="sdt">
+		<input type="text" id="nhapsdt">
+	</div> -->
+	<script type="text/javascript">
+    var thay = new Audio("thay.mp3");
+
+		function thayHuan(){
+			thay.play();
+			 document.getElementById("bodysa").style.display = 'none';
+			 document.getElementById("thayHuan").style.display = 'block';
+			
+		}
+	</script>
+</body>
