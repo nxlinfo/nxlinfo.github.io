@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 
 <head>
@@ -84,3 +85,81 @@
 	<!-- <p>Hello</p>
 	<a href="https://nxlinfo.github.io/index.html">sadasd</a> -->
 </body>
+=======
+<!DOCTYPE html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Monney</title>
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+</head>
+<body>
+	<div id="header">
+    <div id="face">
+      <!-- <img src="./assests/face.jpg"> -->
+    </div>
+      <p id="name">Nguyễn Xuân Lâm</p>
+      <p id="age">19Y</p>
+      <p id="sex">MALE</p>
+      <p id="job">STUDENT</p>
+	</div>
+	<div id=bodyss>
+		<ul>
+		<li>
+			<a href="https://nhantien.momo.vn/eS6syyRPGrC">
+				<div class="menu">
+        		<div id="idmomo"></div>
+					<p>Momo</p>
+				</div>
+			</a>
+		</li>
+		<li>
+			<a href="https://vtpay.page.link/cc6bBaPjC8sGwjEHA">
+				<div class="menu">
+          <div id="idviettel"></div>
+					<p>Viettelpay</p>
+				</div>
+			</a>
+		</li>
+		<li>
+			<div id="idviettin"></div>
+        <div class="menu">
+          <p id="idbank">101870478855</p>
+          <i class="far fa-copy" onclick="myFunction()"></i>
+          <p2 id="copy1">Đã sao chép</p2>
+          <p1>Viettinbank</p1>
+        </div>
+		</li>
+		</ul>
+		<div id="test">
+			<a href="https://nxlinfo.github.io/index.html">
+			<div id="home2">
+				<p>Home</p>
+			
+			</div>	
+		</a>
+		</div>
+		</div>
+	
+	<script>
+		function myFunction() {
+    var copyText = document.getElementById("idbank");
+    var input=document.createElement("INPUT");
+    document.body.appendChild(input);
+    input.value=copyText.innerHTML;
+    input.select();
+    input.setSelectionRange(0, 99999);
+    document.execCommand("copy");
+    document.body.removeChild(input);
+    document.getElementById("copy1").style.display = 'block';
+    setTimeout(function(){
+             document.getElementById("copy1").style.display = 'none';;
+        },500);
+  }
+	</script>
+	<!-- <p>Hello</p>
+	<a href="https://nxlinfo.github.io/index.html">sadasd</a> -->
+</body>
+>>>>>>> 3123a392ef5298290667f258c5bf8c1536401b5f
