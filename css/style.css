@@ -316,3 +316,12 @@ input{
 	color:white;
 	background-color: #000;
 }
+.fa-paper-plane{
+	position: absolute;
+	bottom: 2vw;
+	right: 15vw;
+	font-size: 4vw;
+	animation-name:play;
+    animation-duration:2s;
+    animation-iteration-count:infinite;
+}

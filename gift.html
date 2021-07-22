@@ -18,7 +18,7 @@
         <p id="job">STUDENT</p>
         
         <input type="text" class="ghost" id="input" placeholder="Gửi lời yêu thương">
-        
+        <i class="far fa-paper-plane" onclick="nhap()"></i>
     </div>
     <div id="bodysa">
         <ul>
@@ -70,7 +70,12 @@
         }
         document.addEventListener("keyup",function(even){
             if(event.keyCode == 13){
-            const toDo = input.value;
+
+            nhap();
+            }
+    });
+        function nhap(){
+                const toDo = input.value;
         
         // if the input isn't empty
             if(toDo){
@@ -83,8 +88,6 @@
             localStorage.setItem("MM", JSON.stringify(CMT));
         }
         input.value = "";
-    }
-});
-
+            }
     </script>
 </body>
