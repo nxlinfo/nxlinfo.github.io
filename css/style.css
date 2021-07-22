@@ -312,6 +312,7 @@ li p2{
         }
 input{
 	font-size: 3vw;
-	color white;
+	text-align: center;
+	color:white;
 	background-color: #000;
 }
