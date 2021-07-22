@@ -1,105 +1,114 @@
 <!DOCTYPE html>
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>NXLINFO</title>
-	<link rel="stylesheet" type="text/css" href="./css/style.css">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NXLINFO</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
 </head>
+
 <body>
-	<div id="header">
-    <div id="face">
-      <!-- <img src="./assests/face.jpg"> -->
+    <div id="header">
+        <div id="face">
+            <!-- <img src="./assests/face.jpg"> -->
+        </div>
+        <p id="name">Nguyễn Xuân Lâm</p>
+        <p id="age">19Y</p>
+        <p id="sex">MALE</p>
+        <p id="job">STUDENT</p>
+        <div class="ghost">
+            <a href="https://nxlinfo.github.io/gift.html">
+            <div>
+                <p>Chạm là có quà</p>
+            </div>
+            </a>
+        </div>
     </div>
-      <p id="name">Nguyễn Xuân Lâm</p>
-      <p id="age">19Y</p>
-      <p id="sex">MALE</p>
-      <p id="job">STUDENT</p>
-	</div>
-	<div id=bodyss>
-		<ul>
-		<li>
-			<a href="https://www.facebook.com/nxlzero">
-				<div class="menu">
-          <i class="fab fa-facebook"></i>
-					<p>Facebook</p>
-				</div>
-			</a>
-		</li>
-   
-		<li>
-			<a href="https://www.instagram.com/nxlzero">
-				<div class="menu">
-          <i class="fab fa-instagram"></i>
-					<p>Instagram</p>
-				</div>
-			</a>
-		</li>
-		 
-     <li>
-        <i class="fas fa-phone"></i>
-        <div class="menu">
-          <p id="idphone">0339193576</p>
-          <i class="far fa-copy"
-          onclick="myFunction1()"></i>
-          <p2 id="copy2">Đã sao chép</p2>
-        </div>
-    </li>
-     <li>
-        <i class="far fa-envelope"></i>
-        <div class="menu">
-          <p id="idmail">xuanlamzero@gmail.com</p>
-          <i class="far fa-copy"
-          onclick="myFunction2()"></i>
-          <p2 id="copy3">Đã sao chép</p2>
-        </div>
-    </li>
-    <li>
-      <a href="https://nxlinfo.github.io/indexx.html">
-        <div class="menu">
-          <i class="fas fa-university"></i>
-          <p>Chuyển Tiền</p>
-        </div>
-      </a>
-    </li>
-		</ul>
-	</div>
-	
+    <div id=bodyss>
+        <ul>
+            <li>
+                <a href="https://www.facebook.com/nxlzero">
+                    <div class="menu">
+                        <i class="fab fa-facebook"></i>
+                        <p>Facebook</p>
+                    </div>
+                </a>
+            </li>
+
+            <li>
+                <a href="https://www.instagram.com/nxlzero">
+                    <div class="menu">
+                        <i class="fab fa-instagram"></i>
+                        <p>Instagram</p>
+                    </div>
+                </a>
+            </li>
+
+            <li>
+                <i class="fas fa-phone"></i>
+                <div class="menu">
+                    <p id="idphone">0339193576</p>
+                    <i class="far fa-copy" onclick="myFunction1()"></i>
+                    <p2 id="copy2">Đã sao chép</p2>
+                </div>
+            </li>
+            <li>
+                <i class="far fa-envelope"></i>
+                <div class="menu">
+                    <p id="idmail">xuanlamzero@gmail.com</p>
+                    <i class="far fa-copy" onclick="myFunction2()"></i>
+                    <p2 id="copy3">Đã sao chép</p2>
+                </div>
+            </li>
+            <li>
+                <a href="https://nxlinfo.github.io/indexx.html">
+                    <div class="menu">
+                        <i class="fas fa-university"></i>
+                        <p>Chuyển Tiền</p>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+
 </body>
 <script>
-  var sound = new Audio("sound.mp3");
-  function myFunction2() {
-    var coyText = document.getElementById("idmail");
-    var input=document.createElement("INPUT");
-    document.body.appendChild(input);
-    input.value=coyText.innerHTML;
-    input.select();
-    input.setSelectionRange(0, 99999);
-    document.execCommand("copy");
-    document.body.removeChild(input);
-    sound.play();
-    document.getElementById("copy3").style.display = 'block';
-    setTimeout(function(){
-             document.getElementById("copy3").style.display = 'none';;
-        },500);
-  }
-  function myFunction1() {
-    var copText = document.getElementById("idphone");
-    var input=document.createElement("INPUT");
-    document.body.appendChild(input);
-    input.value=copText.innerHTML;
-    input.select();
-    input.setSelectionRange(0, 99999);
-    document.execCommand("copy");
-    document.body.removeChild(input);
-    sound.play();
-     document.getElementById("copy2").style.display = 'block';
-     setTimeout(function(){
-             document.getElementById("copy2").style.display = 'none';;
-        },500);
-  }
+    var sound = new Audio("sound.mp3");
+
+    function myFunction2() {
+        var coyText = document.getElementById("idmail");
+        var input = document.createElement("INPUT");
+        document.body.appendChild(input);
+        input.value = coyText.innerHTML;
+        input.select();
+        input.setSelectionRange(0, 99999);
+        document.execCommand("copy");
+        document.body.removeChild(input);
+        sound.play();
+        document.getElementById("copy3").style.display = 'block';
+        setTimeout(function() {
+            document.getElementById("copy3").style.display = 'none';;
+        }, 500);
+    }
+
+    function myFunction1() {
+        var copText = document.getElementById("idphone");
+        var input = document.createElement("INPUT");
+        document.body.appendChild(input);
+        input.value = copText.innerHTML;
+        input.select();
+        input.setSelectionRange(0, 99999);
+        document.execCommand("copy");
+        document.body.removeChild(input);
+        sound.play();
+        document.getElementById("copy2").style.display = 'block';
+        setTimeout(function() {
+            document.getElementById("copy2").style.display = 'none';;
+        }, 500);
+    }
 </script>
 
 </body>
+
 </html>
