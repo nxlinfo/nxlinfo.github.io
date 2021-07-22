@@ -192,7 +192,7 @@ li p2{
 .fa-copy:hover{
 	color:#ffb;
 }
-#bodyss #home2{
+#home2{
 	position: absolute;
 	bottom: -25vw;
 	left:5vw;
@@ -253,6 +253,9 @@ li p2{
    /* animation-iteration-count:infinite;*/
 	/*display: none;*/
 	/*z-index: 4;*/
+}
+#bodysa li{
+	cursor: pointer;
 }
  @keyframes move{
             0%{
