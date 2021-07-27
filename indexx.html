@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="format-detection" content="telephone=no">
 	<title>Monney</title>
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
@@ -64,23 +65,27 @@
 	</div>
 	
 	<script>
+		document.cookie="website=freetuts.net; expires=Thu, 0 Dec 2021 12:00:00 UTC";
+		var giatri = document.cookie;
 
     var sound = new Audio("sound.mp3");
 	function myFunction() {
-    	var copyText = document.getElementById("idbank");
-    	var input=document.createElement("INPUT");
-    	document.body.appendChild(input);
-    	input.value=copyText.innerHTML;
-   	 	input.select();
-    	input.setSelectionRange(0, 99999);
-    	document.execCommand("copy");
-    	document.body.removeChild(input);
-    	sound.play();
-    	document.getElementById("copy1").style.display = 'block';
-    	setTimeout(function(){
-             document.getElementById("copy1").style.display = 'none';;
-        },500);
-  	}
+		alert(giatri);
+	}
+   //  	var copyText = document.getElementById("idbank");
+   //  	var input=document.createElement("INPUT");
+   //  	document.body.appendChild(input);
+   //  	input.value=copyText.innerHTML;
+   // 	 	input.select();
+   //  	input.setSelectionRange(0, 99999);
+   //  	document.execCommand("copy");
+   //  	document.body.removeChild(input);
+   //  	sound.play();
+   //  	document.getElementById("copy1").style.display = 'block';
+   //  	setTimeout(function(){
+   //           document.getElementById("copy1").style.display = 'none';;
+   //      },500);
+  	// }
 	</script>
 	<!-- <p>Hello</p>
 	<a href="https://nxlinfo.github.io/index.html">sadasd</a> -->
