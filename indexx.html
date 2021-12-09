@@ -1,88 +1,87 @@
 <!DOCTYPE html>
-
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="format-detection" content="telephone=no">
-	<title>Monney</title>
-	<link rel="stylesheet" type="text/css" href="./css/style.css">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">  
+    <meta name='viewport' 
+     content='width=device-width, initial-scale=1.0, maximum-scale=1.0, 
+     user-scalable=0' >   
+    <title>NXLINFO</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    
 </head>
+
 <body>
-	<div id="header">
-    <div id="face">
+   <div class="dropdown">
+    <i class="fas fa-ellipsis-h" onclick="hamDropdown()" class="nut_dropdown"></i>
+    <div class="noidung_dropdown">
+        <ul id="navmenu">
+               <li onclick="chuyen1()"><p>SPRING</p></li>
+                <li onclick="chuyen2()"><p>SUMMER</p></li>
+                <li onclick="chuyen3()"><p>AUTUMN</p></li>
+                <li onclick="chuyen4()"><p>WINTER</p></li>
+         </ul>
     </div>
-      <p id="name">Nguyễn Xuân Lâm</p>
-      <p id="age">19Y</p>
-      <p id="sex">MALE</p>
-      <p id="job">STUDENT</p>
-       <div class="ghost">
-            <a href="https://nxlinfo.github.io/gift.html">
-            <div>
-                <p>Chạm là có quà</p>
-            </div>
-            </a>
+</div>
+</div>
+    <div id="header">
+        <div id="face">
         </div>
-	</div>
-	<div id=bodyss>
-		<ul>
-		<li>
-			<a href="https://nhantien.momo.vn/eS6syyRPGrC">
-				<div class="menu">
-        		<div id="idmomo"></div>
-					<p>Momo</p>
-				</div>
-			</a>
-		</li>	
-		<li>
-			<a href="https://vtpay.page.link/cc6bBaPjC8sGwjEHA">
-				<div class="menu">
-          <div id="idviettel"></div>
-					<p>Viettelpay</p>
-				</div>
-			</a>
-		</li>
-		<li>
-			<div id="idviettin"></div>
+         <div id="name">
+    		<p>Nguyễn Xuân Lâm</p>
+    	</div>
+    </div>
+    <div id=bodys>
+    	<ul>
+            <li>
+                <a href="https://nhantien.momo.vn/eS6syyRPGrC">
+                <div class="menu">
+                <div id="idmomo"></div>
+                    <p>Momo</p>
+                </div>
+            </a>
+            </li>
+            <li>
+                <a href="https://vtpay.page.link/cc6bBaPjC8sGwjEHA">
+                <div class="menu">
+                <div id="idviettel"></div>
+                    <p>Viettelpay</p>
+                </div>
+            </a>
+            </li>
+            <li>
+                <div id="idviettin"></div>
         <div class="menu">
           <p id="idbank">101870478855</p>
           <i class="far fa-copy" onclick="myFunction()"></i>
           <p2 id="copy1">Đã sao chép</p2>
           <p1>Viettinbank</p1>
-        </div>
-		</li>
-		</ul>
-		<div id="test">
-			<a href="https://nxlinfo.github.io/index.html">
-			<div id="home2">
-				<p>Home</p>
-			
-			</div>	
-		</a>
-		</div>
-		
-		
-	</div>
-	
-	<script>
-
-    var sound = new Audio("sound.mp3");
-	function myFunction() {
-    	var copyText = document.getElementById("idbank");
-    	var input=document.createElement("INPUT");
-    	document.body.appendChild(input);
-    	input.value=copyText.innerHTML;
-   	 	input.select();
-    	input.setSelectionRange(0, 99999);
-    	document.execCommand("copy");
-    	document.body.removeChild(input);
-    	sound.play();
-    	document.getElementById("copy1").style.display = 'block';
-    	setTimeout(function(){
-             document.getElementById("copy1").style.display = 'none';;
-        },500);
-  	}
-	</script>
-	<!-- <p>Hello</p>
-	<a href="https://nxlinfo.github.io/index.html">sadasd</a> -->
+            </li>   
+        </ul>
+    </div>
+  
+    <div id="donate">
+    	<a href="https://nxltest.github.io">
+	    	<p>CONTACT</p>		
+    	</a>
+    </div>
+    <div id="banner1">
+        <img src="./assests/trungthu.png" class="slide" id="autumn">
+        <img src="./assests/summer1.png" class="slide" id="summer">
+        <img src="./assests/noel1.png" class="slide" id="winter">
+        <img src="./assests/tet1.png" class="slide" id="tet">  
+    </div>
+    <div id="banner">
+        <img src="./assests/trungthu1.png" class="slide" id="autumn1">
+        <img src="./assests/summer.png" class="slide" id="summer1">
+        <img src="./assests/noel.png" class="slide" id="winter1">
+        <img src="./assests/tet.png" class="slide" id="tet1">
+    </div>
 </body>
+    <script src="./js/script.js"></script>  
+
+
+</body>
+
+</html>

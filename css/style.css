@@ -6,43 +6,45 @@ html{
 	font-family: arial;
 }
 body{
-	background-color: black;
+	background-color: rgb(230,240,240);
+	/*background-color: white;*/
 	position: absolute;
 }
 #header{
 	position: relative;
 	width: 100vw;
-	height:30vw;
-	background-color: #0D0E0E;
-	
+	height:50vw;
+	/*background-color: #0D0E0E;*/
+}
+a{
+	text-decoration: none;
 }
 #header #face{
 	position: absolute;
-	top:8%;
-	left: 2%;
-	width: 25%;
+	top:12%;
+	left: 34%;
+	width: 32%;
 	background-image:url('https://nxlinfo.github.io/assests/face.jpg');
 	background-size: 100%;
-	background-repeat: no-repeat;
-	height: 80%;
+	/*background-repeat: no-repeat;*/
+	height: 62%;
 	border-radius: 100%;
+	border:solid #ccc;
 }
-/*#face img{
-	position: absolute;
-	background-size: 100%;
-}*/
 #header #name{
-	color:white;
+	width: 100vw;
+	height: 10vw;
 	position: absolute;
-	top:12%;
-	right:8%;
-	font-size: 7vw;
-	font-family: arial;
+	top:84%;
+	color:black;
+	font-weight: 550;
+	font-size: 30px;
+	text-align: center;
 }
 #header #age{
 	color:white;
 	position: absolute;
-	top:50%;
+	top:60%;
 	font-size: 5vw;
 	font-family: arial;
 	right:8%;
@@ -50,196 +52,166 @@ body{
 #header #sex{
 	color:white;
 	position: absolute;
-	top:50%;
+	top:60%;
 	font-size: 5vw;
 	font-family: arial;
 	left:34%;
 
 }
-#header #job{
-	color:white;
-	position: absolute;
-	top:50%;
-	font-size: 5vw;
-	font-family: arial;
-	left:54%;
-
-}
-#header .ghost{
-	position: absolute;
-	bottom: 3%;
-	right:20%;
-	width: 35%;
-	height: 20%;
-	/*background-color: red;*/
-	border-radius: 5vw;
-	border: 0.05vw solid white;
-	animation-name:plays;
-    	animation-duration:2s;
-    	animation-iteration-count:infinite;
-}
-a{
-	text-decoration: none;
-}
-.ghost p{
-		color:white;
-		font-size: 4vw;
-		text-align: center;
-		margin: 0.5vw;
-		animation-name:play;
-    	animation-duration:2s;
-    	animation-iteration-count:infinite;
-}
-@keyframes play{
-            0%{
-                opacity: 0%;
-            }
-            10%{
-            	opacity: 0%;
-            	color:#9CFA2B;
-            }
-            50%{
-            	color: #FAF22B;
-            }
-            100%{
-              /*color: green;*/
-              opacity: 100%;
-              color:#FA652B;
-              /*border: 0.05vw solid #FA652B;*/
-            }
-        }
-@keyframes plays{
-            0%{
-                opacity: 0%;
-            }
-            50%{
-            	border: 0.05vw solid #FAF22B;
-            }
-            70%{
-            	 border: 0.05vw solid #9CFA2B;
-            }
-            100%{
-              /*color: green;*/
-              opacity: 100%;
-              border: 0.05vw solid #FA652B;
-            }
-        }
-#bodyss{
+#bodyss{	
 	position:absolute;
+	/*background-color: red;*/
 }
-ul{
-	position: relative;
-}
-li{
+#bodyss ul{
 	position: relative;
 	top:2vw;
-	margin: 1vw 0px;
+}
+#bodyss ul li{
+	position: relative;
+	top:4vw;
+	margin: 0.5vw 0px;
 	width: 100vw;
-	height: 20vw;
+	height: 9vw;
 	list-style-type: none;
 }
-li p{
-	font-size: 6.5vw;
-	margin: 6vw;
-	color:#fff;
+/*.fa-facebook{
+	color:white;
+}*/
+#bodyss ul li p{
 	position: absolute;
-	left:18%;
+	top:12%;
+	left:27%;
+	color:black;
+	font-size: 5vw;
+	/*top:%;*/
 }
-li p1{
-	font-size: 3.5vw;
-	margin: 5vw;
-	color:#fff;
+#bodyss ul li i{
 	position: absolute;
-	left:18%;
-	top:45%;
+	top:10%;
+	left:14%;
+	color:black;
+	font-size: 7vw;
 }
-li p2{
-	font-size: 2vw;
-	margin: 5vw;
-	color:#fff;
+#body2{
+	/*background-color: red;*/
 	position: absolute;
-	right:3%;
-	top:-8%;
+	width: 100vw;
+	height:15vw;
+	top:100vw;
+}
+#body2 ul{
+	position: relative;
+}
+#body2 ul li{
+	position: relative;
+	left: 15%;
+	margin-left: 5%;
+	/*background-color: red;*/
+	display: inline-block;
+	width: 15vw;
+	height: 14vw;
+	z-index: 2;
+	border-radius:5vw;
+	/*border: solid #ccc;*/
+}
+#body2 ul i{
+	font-size: 14vw;
+}
+ul li img{
+	margin: 0.5vw;
+	background-size: 100%;
+	width: 14vw;
+	height: 14vw;
+}
+li:hover img{
+	background-color: pink;
+}
+#donate{
+	background-color: #ccc;
+	width: 40vw;
+	height: 15vw;
+	position: absolute;
+	top: 123vw;
+	left: 28vw;
+	border-radius: 3vw;
+	border:solid #aaa;
+}
+#donate p{
+	color: black;
+	font-size: 7vw;
+	margin:3.5vw; 
+	text-align: center;
+}
+#donate:hover{
+	background-color: pink;
+}
+#bodys{
+	margin-top: 7vw;
+}
+#bodys ul li{
+	margin-top: 2vw;
+	height: 17vw;
+	width: 85vw;
+	position: relative;
+	left: 7vw;
+	background-color: #ccc;
+	list-style-type: none;
+	border-radius: 6vw;
+	border:solid #aaa;
+
+}
+#bodys li p{
+	position: absolute;
+	top: 29%;
+	left: 27%;
+	color:black;
+	font-weight: 600;
+	font-size: 6vw;
+}
+#bodys li p1{
+	color: black;
+	position: absolute;
+	top:71%;
+	left: 28%;
+}
+#bodys li p2{
+	position: absolute;
+	right:10%;
 	display: none;
 }
 #idmomo{
 	background-image: url('https://nxlinfo.github.io/assests/momo.jpg');
-	width: 16vw;
-	height: 16vw;
+	width: 14vw;
+	height: 14vw;
 	background-size: 100%;
 	position: absolute;
-	top:10%;
+	top:9%;
 	left: 4%;
 	border-radius: 6vw;
 }
 #idviettel{
 	background-image: url('https://nxlinfo.github.io/assests/unnamed.png');
-	width: 16vw;
-	height: 16vw;
+	width: 14vw;
+	height: 14vw;
 	background-size: 100%;
 	position: absolute;
-	top:10%;
+	top:9%;
 	left: 4%;
 	border-radius: 6vw;
 }
 #idviettin{
 	z-index: 2;
 	background-image: url('https://nxlinfo.github.io/assests/viettin.png');
-	width: 16vw;
-	height: 16vw;
+	width: 14vw;
+	height: 14vw;
 	background-size: 100%;
 	position: absolute;
-	top:10%;
+	top:9%;
 	left: 4%;
+	border-radius: 6vw;
 	/*border-radius: 6vw;*/
 }
-.menu{
-	position: absolute;
-	background-color: #0D0E0E;
-	width: 100vw;
-	height: 20vw;
-	margin: 1vw 0px;	
-	
-}
-.fa-facebook{
-	color:rgba(132,243,248,0.6);
-	position: absolute;
-	top:10%;
-	left: 4%;
-	font-size: 16vw;
-}
-.fa-phone{
-	z-index: 2;
-	color:rgba(132,243,248,0.6);
-	position: absolute;
-	top:10%;
-	left: 4%;
-	font-size: 16vw;
-}
-.fa-instagram{
-	z-index: 2;
-	color:rgba(132,243,248,0.6);
-	position: absolute;
-	top:10%;
-	left: 4%;
-	font-size: 16vw;
-}
-.fa-university{
-	z-index: 2;
-	color:rgba(132,243,248,0.6);
-	position: absolute;
-	top:10%;
-	left: 4%;
-	font-size: 16vw;
-}
-.fa-envelope{
-	z-index: 2;
-	color:rgba(132,243,248,0.6);
-	position: absolute;
-	top:10%;
-	left: 4%;
-	font-size: 16vw;
-}
+
 .fa-copy{
 	cursor: pointer;
 	position: absolute;
@@ -251,77 +223,143 @@ li p2{
 .fa-copy:hover{
 	color:#ffb;
 }
-#home2{
-	position: absolute;
-	bottom: -25vw;
-	left:5vw;
-	height: 15vw;
+
+
+#banner{
+	z-index: -1;
+	/*background-image:url(./noel.png);*/
+	width: 110px;
+	height: 110px;
+	position: fixed;
+	bottom: 0vw;
+	/*background-size: contain;*/
+}
+#banner1{
+	z-index: -1;
+	/*background-image:url(./noel.png);*/
+	width: 110px;
+	height: 110px;
+	position: fixed;
+	top: 0vw;
+}
+.slide{
+	display: none;
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+/*#menu1{
 	width: 25vw;
-	background-color: #0D0E0E;
-	/*color: #ffb;
-	text-align: center;
-	font-size: 8vw;*/
-	border-radius: 6vw;
-}
-#home2 p{
-	color:rgba(132,243,248,0.6);
-	text-align: center;
-	font-size: 8vw;
-	margin: 2vw 0px;
-	font-family: arial;
-}
-#test:hover #home2{
-	background-color: #2c2f2d;
-}
-#sdt{
-	width:100vw;
-	height:20vw;
-	background-color: red;
-	display: none;
-}
-#nhapsdt{
-		width: 80%;
-		height:50%;
-}
-#thayHuan{
-	position:	relative;
-	width:100vw;
-	height:100vw;
-	background-image: url('https://memedaily.vn/storage/meme/toan-bo-loi-ran-day-cua-huan-hoa-hong-huan-rose.jpg');
-	background-size: 100%;
-	display: none;
-	animation-name:move;
-    animation-duration:8s;
-   /* animation-iteration-count:infinite;*/
-	/*display: none;*/
-	/*z-index: 4;*/
-}
-#bodysa li{
-	cursor: pointer;
-}
- @keyframes move{
-            0%{
-                opacity: 0%;
-            }
-            10%{
-            	opacity: 0%;
-            }
-            100%{
-              opacity: 100%;
-            }
-        }
-input{
-	font-size: 3vw;
-	text-align: center;
-	color:white;
-	background-color: #000;
-}
-.fa-paper-plane{
+	height:60vw;
 	position: absolute;
-	bottom: 2vw;
-	right: 15vw;
+	top:4vw;
+	right: 0vw;
+	border-radius: 2vw;	
+	z-index: 3;
+}
+#menu1 i{
+	position: absolute;
+	top:2%;
+	right: 10%;
 	font-size: 4vw;
-	animation-name:play;
-    animation-duration:2s;
-    animation-iteration-count:infinite;
+	color: #ccc;
+}
+#menu1 #navmenu{
+	background-color: red;	
+	display: none;
+	position: absolute;
+	top:-5%;
+	width: 100%;
+	height: 100%;
+	border-radius: 2vw;
+}
+#navmenu li{
+	list-style-type: none;
+	position: relative;
+	width: 90%;
+	height: 20%;
+	margin-top: 5%;
+	margin-left: 5%;
+	border-radius: 1vw;
+	background-color: #ccc;
+}
+#navmenu li p{
+	text-align: center;
+	padding-top: 18%;
+}
+#menu1 i:hover{
+	color:red;
+}*/
+/* Nút Dropdown*/
+/*.nut_dropdown {
+  background-color: #0080ff;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+*/
+/* Thiết lập vị trí cho thẻ div với class dropdown*/
+/*#sa{
+	position: relative;
+	top:20px;
+	left:20px;
+}*/
+.dropdown {
+  z-index: 3;
+  position: relative;
+  /*float: top;*/
+  top:8px;
+  float: right;
+  right: 3vw;
+  display: block;
+  /*width: 17px;
+  background-color: #ccc;
+  border-radius: 10px;*/
+}
+.dropdown i:hover{
+	color:pink;
+}
+/* Nội dung Dropdown */
+.noidung_dropdown {
+  /*Ẩn nội dụng các đường dẫn*/
+  display: none;
+  position: absolute;
+  right: 40%;
+  width: 200px;
+  height: 250px;
+
+  background-color: #f1f1f1;
+  /*min-width: 170px;*/
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  text-align: center;
+  border-radius: 2vw;
+}
+
+/* Thiết kế style cho các đường dẫn tronng Dropdown */
+.noidung_dropdown ul {
+  width: 90%;
+  height: 10%;
+  color: black;
+  padding: 5px 10px;
+  text-decoration: none;
+  display: block;
+}
+.hienThi{
+  display:block;
+}
+#navmenu li{
+	list-style-type: none;
+	position: relative;
+	width: 90%;
+	height: 200%;
+	margin-top: 5%;
+	margin-left: 5%;
+	border-radius: 1vw;
+	background-color: #ccc;
+}
+#navmenu li p{
+	text-align: center;
+	padding-top: 10%;
 }
