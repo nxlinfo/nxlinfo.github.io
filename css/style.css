@@ -248,63 +248,7 @@ li:hover img{
 	width: 100%;
 	height: 100%;
 }
-/*#menu1{
-	width: 25vw;
-	height:60vw;
-	position: absolute;
-	top:4vw;
-	right: 0vw;
-	border-radius: 2vw;	
-	z-index: 3;
-}
-#menu1 i{
-	position: absolute;
-	top:2%;
-	right: 10%;
-	font-size: 4vw;
-	color: #ccc;
-}
-#menu1 #navmenu{
-	background-color: red;	
-	display: none;
-	position: absolute;
-	top:-5%;
-	width: 100%;
-	height: 100%;
-	border-radius: 2vw;
-}
-#navmenu li{
-	list-style-type: none;
-	position: relative;
-	width: 90%;
-	height: 20%;
-	margin-top: 5%;
-	margin-left: 5%;
-	border-radius: 1vw;
-	background-color: #ccc;
-}
-#navmenu li p{
-	text-align: center;
-	padding-top: 18%;
-}
-#menu1 i:hover{
-	color:red;
-}*/
-/* Nút Dropdown*/
-/*.nut_dropdown {
-  background-color: #0080ff;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-}
-*/
-/* Thiết lập vị trí cho thẻ div với class dropdown*/
-/*#sa{
-	position: relative;
-	top:20px;
-	left:20px;
-}*/
+
 .dropdown {
   z-index: 3;
   position: relative;
@@ -313,6 +257,8 @@ li:hover img{
   float: right;
   right: 3vw;
   display: block;
+  font-size: 20px;
+color:#ccc;
   /*width: 17px;
   background-color: #ccc;
   border-radius: 10px;*/
