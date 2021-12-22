@@ -63,7 +63,23 @@
     function hamDropdown() {
         document.querySelector(".noidung_dropdown").classList.toggle("hienThi");
     }
-
+    function hamDropdown1()  {
+    var x=document.querySelector(".theme");
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+  }
+    function c2lose(){
+        document.getElementById("covid").style.display = 'none';
+    }
+    function covid(){
+        document.getElementById("covid").style.display = 'block';
+    }
+    // function hamDropdown1() {
+    //     document.querySelector(".theme").style.display = 'block';
+    // }
     function block() {
         document.getElementById("winter1").style.display = 'none';
         document.getElementById("winter").style.display = 'none';

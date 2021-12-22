@@ -13,25 +13,38 @@
 </head>
 
 <body>
-    <div class="dropdown">
-        <i class="fas fa-ellipsis-h" onclick="hamDropdown()" class="nut_dropdown"></i>
-        <div class="noidung_dropdown">
-            <ul id="navmenu">
-                <li onclick="chuyen1()">
-                    <p>SPRING</p>
-                </li>
-                <li onclick="chuyen2()">
-                    <p>SUMMER</p>
-                </li>
-                <li onclick="chuyen3()">
-                    <p>AUTUMN</p>
-                </li>
-                <li onclick="chuyen4()">
-                    <p>WINTER</p>
-                </li>
-            </ul>
+    
+   <div class="dropdown">
+    <i class="fas fa-bars" onclick="hamDropdown()" class="nut_dropdown"></i>
+</div>
+    <div class="noidung_dropdown">
+        <div id="nickname">
+            <i class="fas fa-home"></i>
+            <p>NXLZero</p>        
         </div>
-    </div>
+        <div id="version">
+            <p>Version 2.0</p>
+        </div>
+        <ul id="navmenu">
+            <li id="navtheme" class="menu" onclick="hamDropdown1()">
+                <i class="fas fa-palette" ></i>
+                <p  >THEME</p>
+                <ul class="theme" >
+                    <li onclick="chuyen1()"><p>SPRING</p></li>
+                    <li onclick="chuyen2()"><p>SUMMER</p></li>
+                    <li onclick="chuyen3()"><p>AUTUMN</p></li>
+                    <li onclick="chuyen4()"><p>WINTER</p></li>
+                </ul>
+            </li>
+            <li class="menu" onclick="covid()">
+                <i class="fas fa-syringe"></i>
+                <p>COVID</p>
+            </li>
+           <!--  <li class="menu">  
+                <p></p>
+            </li> -->
+        </ul>
+
     </div>
     <div id="header">
         <div id="face">
