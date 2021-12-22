@@ -320,7 +320,7 @@ li:hover img{
 	list-style-type: none;
 	background-color: 
 }
-#navtheme:hover #theme{
+#navtheme:hover .theme{
 	display: block;
 }
 #navmenu>li>p{
@@ -341,15 +341,15 @@ li:hover img{
 	z-index: 3;
   display:block;
 }
-#theme{
+.theme{
 	display: none;
 	background-color: #11111d;
 }
-#theme li{
+.theme li{
 	list-style-type: none;
 	border:solid 0.1px;
 }
-#theme li p{
+.theme li p{
 	padding-top: 10px;
 	margin-left: 30%;
 	font-size: 15px;
