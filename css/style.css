@@ -250,15 +250,15 @@ li:hover img{
 }
 
 .dropdown {
-  z-index: 3;
-  position: relative;
+  z-index: 4;
+  position:relative;
   /*float: top;*/
-  top:8px;
+  top:12px;
   float: right;
   right: 3vw;
   display: block;
-  font-size: 20px;
-color:#ccc;
+  /*background-color: red;*/
+  display: inline-block;
   /*width: 17px;
   background-color: #ccc;
   border-radius: 10px;*/
@@ -268,46 +268,104 @@ color:#ccc;
 }
 /* Nội dung Dropdown */
 .noidung_dropdown {
-  /*Ẩn nội dụng các đường dẫn*/
-  display: none;
-  position: absolute;
-  right: 40%;
+
+  position: fixed;
+  right: 0px;
+  float: left;
   width: 200px;
-  height: 250px;
-
-  background-color: #f1f1f1;
-  /*min-width: 170px;*/
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  height: 100%;
+  background-color: #12192c;
   z-index: 1;
-  text-align: center;
-  border-radius: 2vw;
+  /*text-align: center;*/
+  display: none;
 }
+.noidung_dropdown>#nickname>p{
+	color:  white;
+	/*background-color: green;*/
+ 	position: absolute;
+ 	font-size: 25px;
+ 	left:23%;
+ 	top:5px;
+}
+.noidung_dropdown #nickname{
+	/*background-color: red;*/
+	width: 100%;
+	height: 35px;
+}
+.fa-home{
+	position: absolute;
+	/*top:10%;*/
+	color: white;
+	left: 5%;
+	top:12px;
+	font-size: 20px;
+}
+#navmenu>li{
+	position: relative;
+	/*border-top: 2px solid #b1154a;*/
+	/*border-bottom: 2px solid #b1154a;*/
+	/*border: solid 1px yellow;*/
+}
+.noidung_dropdown #navmenu{
+	background-color: #12192c;
+	position: relative;
+	top:10px;
+	width: 100%;
+	height: 100%;
+}
+ .menu{
+	/*position: relative;*/
+	width: 100%;
+	/*height: 10vư;*/
+	list-style-type: none;
+	background-color: 
+}
+#navtheme:hover #theme{
+	display: block;
+}
+#navmenu>li>p{
+	color:  #a9aeb7;
 
-/* Thiết kế style cho các đường dẫn tronng Dropdown */
-.noidung_dropdown ul {
-  width: 90%;
-  height: 10%;
-  color: black;
-  padding: 5px 10px;
-  text-decoration: none;
-  display: block;
+	padding-top: 10px;
+	font-size: 25px;
+	text-align: center;
+}
+#navmenu>li>i{
+	font-size: 25px;
+	position: absolute;
+	top:15px;
+	left: 7%;
+	color:  #a9aeb7;
 }
 .hienThi{
+	z-index: 3;
   display:block;
 }
-#navmenu li{
-	list-style-type: none;
-	position: relative;
-	width: 90%;
-	height: 200%;
-	margin-top: 5%;
-	margin-left: 5%;
-	border-radius: 1vw;
-	background-color: #ccc;
+#theme{
+	display: none;
+	background-color: #11111d;
 }
-#navmenu li p{
+#theme li{
+	list-style-type: none;
+	border:solid 0.1px;
+}
+#theme li p{
+	padding-top: 10px;
+	margin-left: 30%;
+	font-size: 15px;
+	color: #ccc;
+}
+#version{
+	/*background-color: red;*/
+	position: absolute;
+	z-index: 5;
+	bottom:0;
+	width: 100%;
+}
+#version p{
+	color: #ccc;
 	text-align: center;
-	padding-top: 10%;
+	font-size: 20px;	
 }
 #covid{
 	/*background-color: red;*/
