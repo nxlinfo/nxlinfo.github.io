@@ -266,7 +266,6 @@ li:hover img{
 .dropdown i:hover{
 	color:pink;
 }
-/* Nội dung Dropdown */
 .noidung_dropdown {
 
   position: fixed;
@@ -276,25 +275,21 @@ li:hover img{
   height: 100%;
   background-color: #12192c;
   z-index: 1;
-  /*text-align: center;*/
   display: none;
 }
 .noidung_dropdown>#nickname>p{
 	color:  white;
-	/*background-color: green;*/
  	position: absolute;
  	font-size: 28px;
  	left:27%;
  	top:17px;
 }
 .noidung_dropdown #nickname{
-	/*background-color: red;*/
 	width: 100%;
 	height: 35px;
 }
 .fa-home{
 	position: absolute;
-	/*top:10%;*/
 	color: white;
 	left: 5%;
 	top:18px;
@@ -308,7 +303,7 @@ li:hover img{
 	width: 100%;
 	height: 100%;
 }
- .menu{
+ .menu1{
  	/*padding-top: 10px;*/
 	position: relative;
 	top:30px;
