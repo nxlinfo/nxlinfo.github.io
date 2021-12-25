@@ -160,6 +160,10 @@ li:hover img{
 	border:solid #aaa;
 
 }
+#bodys li .menu{
+	height: 17vw;
+	width: 85vw;
+}
 #bodys li p{
 	position: absolute;
 	top: 29%;
@@ -263,7 +267,7 @@ li:hover img{
   background-color: #ccc;
   border-radius: 10px;*/
 }
-.dropdown i:hover{
+.doiMau{
 	color:pink;
 }
 .noidung_dropdown {
@@ -308,6 +312,7 @@ li:hover img{
 	position: relative;
 	top:30px;
 	width: 100%;
+
 	border-top: solid 1px #26222f;
 	border-bottom: solid 1px #26222f;
 	padding-top: 30px;

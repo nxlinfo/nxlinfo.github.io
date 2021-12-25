@@ -62,6 +62,8 @@
 
     function hamDropdown() {
         document.querySelector(".noidung_dropdown").classList.toggle("hienThi");
+        document.querySelector(".dropdown").classList.toggle("doiMau");
+        
     }
     function hamDropdown1()  {
     var x=document.querySelector(".theme");
