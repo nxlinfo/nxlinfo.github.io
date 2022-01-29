@@ -388,6 +388,16 @@ li:hover img{
 	font-size: 20px;
 	position: absolute;
 }
+#anh_nen{
+	background-color: red;
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	z-index: 6;
+	display: none;
+	/*margin:0px;*/
+}
+
 .snowflake {
   color: #fff;
   font-size: 0.3em;
